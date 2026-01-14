@@ -81,11 +81,11 @@ Example:
 ENV=dev npx playwright test --list
 ```
 
-Quick env check (no tests):
+Quick config check (no tests run):
 
 ```
-ENV=dev node scripts/print-env.js
-ENV=stg node scripts/print-env.js
+ENV=dev npx playwright test --list
+ENV=stg npx playwright test --list
 ```
 
 ## Run Tests
