@@ -1,0 +1,36 @@
+{
+  "name": "test-fw",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:dev": "ENV=dev playwright test",
+    "test:stg": "ENV=stg playwright test",
+    "test:grep": "playwright test --grep",
+    "test:dev:grep": "ENV=dev playwright test --grep",
+    "test:stg:grep": "ENV=stg playwright test --grep",
+    "test:ui": "playwright test --project=ui",
+    "test:api": "playwright test --project=api",
+    "format": "prettier --write .",
+    "lint": "eslint . --max-warnings=0",
+    "allure:generate": "allure generate reports/allure-results --clean -o reports/allure-report",
+    "allure:open": "allure open reports/allure-report"
+  },
+  "keywords": [],
+  "author": "Didar",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "allure-commandline": "^2.32.0",
+    "allure-playwright": "^2.15.1",
+    "@typescript-eslint/eslint-plugin": "^8.28.0",
+    "@typescript-eslint/parser": "^8.28.0",
+    "@types/node": "^22.10.5",
+    "dotenv": "^16.4.5",
+    "eslint": "^9.19.0",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.3.3",
+    "typescript": "^5.5.4"
+  }
+}

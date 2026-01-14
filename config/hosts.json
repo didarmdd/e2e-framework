@@ -1,0 +1,4 @@
+{
+  "dev": "https://example.com",
+  "stg": "https://staging.example.com"
+}
